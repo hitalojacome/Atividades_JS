@@ -16,11 +16,14 @@
         let idade = 2023 - ano_nascimento 
 
         document.write(nome +" você tem " + idade + " anos")
+        document.write("<br>")
 
         if(idade >=18 && idade <70){
             document.write("Seu voto é obrigatório.")
         }else if(idade >=16 && idade >=70){
-            
+            document.write("Seu voto é facultativo.")
+        }else{
+            document.write("Você não pode votar")
         }
     </script>
 </body>
