@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 7 Form</title>
+</head>
+<body>
+    <!-- Faça um programa que leia 6 números que o usuário vai informar. Todos os números lidos com valor inferior a 72 devem ser somados. Escreva o valor final da soma efetuada e também todos valores que o usuário informou. -->
+
+    <script>
+        let soma = 0;
+        let valor1 = parseFloat(prompt("Informe o primeiro valor: "))
+        if(valor1 < 72) {
+            soma = soma + valor1
+        }else{
+            document.write("O valor 1 digitado é maior que 72")
+        }
+        let valor2 = parseFloat(prompt("Informe o segundo valor: "))
+        if(valor2 < 72) {
+            soma = soma + valor2
+        }else{
+            document.write("O valor 2 digitado é maior que 72")
+        }
+        let valor3 = parseFloat(prompt("Informe o terceiro valor: "))
+        if(valor3 < 72) {
+            soma = soma + valor3
+        }else{
+            document.write("O valor 3 digitado é maior que 72")
+        }
+        let valor4 = parseFloat(prompt("Informe o quarto valor: "))
+        if(valor4 < 72) {
+            soma = soma + valor4
+        }else{
+            document.write("O valor 4 digitado é maior que 72")
+        }
+        let valor5 = parseFloat(prompt("Informe o quinto valor: "))
+        if(valor5 < 72) {
+            soma = soma + valor5
+        }else{
+            document.write("O valor 5 digitado é maior que 72")
+        }
+        let valor6 = parseFloat(prompt("Informe o sexto valor: "))
+        if(valor6 < 72) {
+            document.write("A soma dos valores a digitados é: " + (soma = soma + valor6))
+        }else{
+            document.write("O valor 6 digitado é maior que 72")
+        }
+
+        document.write("<br>")
+        document.write("Os valores digitados foram: " + valor1 + "\n" + valor2 + "\n" + valor3 + "\n" + valor4 + "\n" + valor5 + "\n" + valor6 + "\n")
+
+        
+    </script>
+</body>
+</html>
