@@ -4,11 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercício 5 Form</title>
 </head>
 <body>
     <!-- Faça um programa que leia 10 valores informados pelo usuário, calcule, exiba os números informados e escreva a média aritmética desses valores lidos. -->
 
-    
+    <script>
+        let valor1 = parseFloat(prompt("Informe o primeiro valor: "))
+        let valor2 = parseFloat(prompt("Informe o segundo valor: "))
+        let valor3 = parseFloat(prompt("Informe o terceiro valor: "))
+        let valor4 = parseFloat(prompt("Informe o quarto valor: "))
+        let valor5 = parseFloat(prompt("Informe o quinto valor: "))
+        let valor6 = parseFloat(prompt("Informe o sexto valor: "))
+        let valor7 = parseFloat(prompt("Informe o setimo valor: "))
+        let valor8 = parseFloat(prompt("Informe o oitavo valor: "))
+        let valor9 = parseFloat(prompt("Informe o nono valor: "))
+        let valor10 = parseFloat(prompt("Informe o decimo valor: "))
+
+        let media = (valor1 + valor2 + valor3 + valor4 + valor5 + valor6 + valor7 + valor8 + valor9 + valor10) / 10;
+
+        document.write("Os valores digitados foram: " + valor1 + "\n" + valor2 + "\n" + valor3 + "\n" + valor4 + "\n" + valor5 + "\n" + valor6 + "\n" + valor7 + "\n" + valor8 + "\n" + valor9 + "\n" + valor10 + "\n");
+        document.write("<br>");
+        document.write("A média dos valores a cima é: " + media)
+    </script>
 </body>
 </html>
