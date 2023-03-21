@@ -11,24 +11,24 @@
     <!-- Escreva um programa que calcule a média de quatro números informados pelo usuário, mas somente se esses números forem maiores que 0 e menores que 10. No final, se a média for maior que cinco o usuário receberá uma mensagem "Você passou no teste". Em qualquer outra situação, ele receberá uma mensagem de "tente novamente" -->
 
     <script>
-        let nota1 = parseFloat(prompt("Informe a nota da primeira avaliação: "))
-        let nota2 = parseFloat(prompt("Informe a nota da segunda avaliação: "))
-        let nota3 = parseFloat(prompt("Informe a nota da terceira avaliação: "))
-        let nota4 = parseFloat(prompt("Informe a nota da quarta avaliação: "))
+        let num1 = parseFloat(prompt("Digite o primeiro número: "));
+        let num2 = parseFloat(prompt("Digite o segundo número: "));
+        let num3 = parseFloat(prompt("Digite o terceiro número: "));
+        let num4 = parseFloat(prompt("Digite o quarto número: "));
 
-        let media = (nota1 + nota2 + nota3 + nota4) / 4;
-
-
-        if(nota1,nota2,nota3,nota4 <=0 && nota1,nota2,nota3,nota4 >10){
-            document.write("O valor informado é inválido!")
-        }else if(media >=5){
+        if (num1 > 0 && num1 < 10 && num2 > 0 && num2 < 10 && num3 > 0 && num3 < 10 && num4 > 0 && num4 < 10) {
+        let media = (num1 + num2 + num3 + num4) / 4;
+        if (media > 5) {
             document.write("A sua média foi: " + media);
             document.write("<br>");
-            document.write("Você passou no teste")
-        }else if(media <5){
+            document.write("Você passou no teste");
+        } else {
             document.write("A sua média foi: " + media);
             document.write("<br>");
-            document.write("Tente novamente")
+            document.write("Tente novamente");
+        }
+        } else {
+            document.write("Os números digitados devem estar entre 0 e 10.");
         }
     </script>
 </body>
