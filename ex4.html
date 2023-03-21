@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <!-- Escreva um programa em que o usuário informe dois números utilizando o "prompt". Então escreva em tela o maior deles. -->
+    <!-- Faça um programa que leia dois valores informados pelo usuário e exiba uma das três mensagens a seguir: ‘Números iguais’, caso os números sejam iguais ‘Primeiro é maior’, caso o primeiro seja maior que o segundo; ‘Segundo maior’, caso o segundo seja maior que o primeiro. -->
 
     <script>
         let valor1 = parseFloat(prompt("Informe o primeiro valor: "))
@@ -16,6 +16,8 @@
 
         if(valor1 >valor2){
             document.write("O primeiro valor digitado: " + valor1 +" é o maior entre os dois.")
+        }else if(valor1==valor2){
+            document.write("Os valores digitados são iguais.")
         }else{
             document.write("O segundo valor digitado: " + valor2 +" é o maior entre os dois.")
         }
